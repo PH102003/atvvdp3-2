@@ -56,18 +56,19 @@ public class Cliente implements Operaçoes{
         }
         catch(Exception e){
             if(valor > saldo){
-
-                e.getMessage();
+                System.out.println(e.getMessage());
             }
             
         }
     }
     @Override
     public void extrato() {
-        for(int i = 1; i <= historico.length - 20; i++){
+        for(int i = 0; i < 10; i++){
+            if(historico[i] == null)
+                break;
             System.out.println(historico[i]);
         }
-    }
+    
     
     
     
