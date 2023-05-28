@@ -8,7 +8,7 @@ public class Investimento extends Produto {
     @Override
     public void rendimento() {
         // TODO Auto-generated method stub
-         getValor() * 0,03;
+        setValor(getValor() * 0.03);
     }
     
 }
